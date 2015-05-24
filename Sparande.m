@@ -1,5 +1,8 @@
 %% Sparande
-% Här kommer alla mina program för sparande finnas med
+% Du navigerar programmet genom att svara på frågor och uppmaningar som
+% programmet ger dig. Detta är ett textbaserat program.
+% Tex om du vill räkna på Räntesparande så skriver du 3, när programmet
+% frågar vad du vill göra.
 %% Housekeeping
 clear all
 close all
@@ -20,7 +23,7 @@ loop = true;
         disp('6 | Obligationer');
         disp('7 | Strukturerade produkter');
         disp('8 | Bolån.');
-        disp('0 | Avsluta programmet.');
+        disp('999 | Avsluta programmet.');
         disp('--------------------');
         val = input('Var god och välj bland de ovanstående alternativen: ');
             switch val
@@ -56,7 +59,7 @@ loop = true;
                     pause;
                 case 6
                     disp('Du har valt obligationer.');
-                    disp('Programmet är under uppbyggnad.');
+                    Obligationer;
                     disp('Du har gått tillbaka till huvudmenyn. Tryck på valfri tangent för att fortsätta.');
                     pause;
                 case 7
@@ -69,7 +72,7 @@ loop = true;
                     disp('Programmet är under uppbyggnad.');
                     disp('Du har gått tillbaka till huvudmenyn. Tryck på valfri tangent för att fortsätta.');
                     pause;
-                case 0
+                case 999
                     disp('Du har valt att avsluta programmet. Tryck på valfri tangent för att fortsätta.');
                     pause;
                     loop = false;
