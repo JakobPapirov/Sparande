@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!--<link rel="icon" href="graphics/" type="image/x-icon">-->
+		<!-- For Edge -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- -->
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="your,keywords,goes,here">
+		<meta name="author" content="Your Name">
+		<!-- Google fonts -->
+		
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- JavaScript -->
+			<!-- Bootstrap -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<!-- Font Awesome -->
+			<script src="https://use.fontawesome.com/c97dac5b89.js"></script>
+			<!-- MathJax -->
+			<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+			<!-- Local -->
+			
+		<!-- CSS -->
+			<!-- Loads bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- Has to be loaded first, else overwritten -->
+			<!-- Main CSS -->
+		<link rel="stylesheet" href="css/main.css"> <!-- Find out if i should add a media tag for a separate css for mobile -->
+	<title>Sparande: Buffert</title>
+</head>
+<body  id="top">
+	<div class="container">
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, fixed -->
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span> <!-- Dash one -->
+        		<span class="icon-bar"></span> <!-- Dash two -->
+        		<span class="icon-bar"></span> <!-- Dash three -->
+      	</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      		<ul class="nav navbar-nav navbar-right"> <!-- Intrapage navigation -->
+      			<li><a href="#summary">Sammanställning</a></li>
+						<li><a href="#details">Detaljer</a></li>
+          	<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
+					</ul>
+					<ul class="nav navbar-nav navbar-left"> <!-- Interpage (Intersite) navigation -->
+					  <li><a href="index.html"><img src="graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
+            <li><a href="nutid.html">Nutid</a></li>
+            <li><a href="medeltid.html">Medeltid</a></li>
+            <li><a href="framtid.html">Framtid</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav> <!-- Nav ends -->
+		<div class="row"> <!-- Header -->
+			<div class="col-md-12"> <!-- Takes upp 100% row -->
+				<div class="page-title">
+					<h1>Ekonomi</h1>
+						<h3>Sparande</h3>
+				</div>
+			</div>
+		</div> <!-- Header ends -->
+		<div class="row"> <!-- Section divider -->
+      <div class="col-md-12">
+        <hr> <!-- Horizontal rule -->
+      </div>
+    </div>
+		<div class="row"> <!-- Breadcrumb row -->
+      <div class="col-md-12">
+        <ol class="breadcrumb"> <!-- The active list item does not include a link -->
+          <li>Homepage</li>
+          <li class="active">Nutid</li> <!-- Current page -->
+        </ol>
+      </div>
+    </div> <!-- Breadcrumb row ends -->
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
+		<div class="row"> <!-- Row -->
+			<div class="col-md-12"> <!-- Col -->
+				<h2 class="header-section" id="summary">Nutid</h2>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>Strategi</th>
+							<th>Fördelning (%)</th>
+							<th>Investerat (kr)</th>
+							<th>Värde (kr)</th>
+							<th>Förändring sedan start (kr)</th>
+							<th>Förändring sedan start (%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-data">
+							<th>Räntekonto</th>
+								<td>~10</td>
+								<td>1200,45</td>
+								<td>1203,62</td>
+								<td>3,17</td>
+								<td class="change-good">0,26</td>
+						</tr>
+						<tr class="table-data">
+							<th>Fonder</th>
+								<td>~90</td>
+								<td>9 986,15</td>
+								<td>10 074,02</td>
+								<td>87,87</td>
+								<td class="change-good">0,88</td>
+						</tr>
+						<tr class="table-sum">
+							<th>Syntes</th>
+								<td>100</td>
+								<td>11 186,60</td>
+								<td>11 277,64</td>
+								<td>90,04</td>
+								<td class="change-good">0,81</td>
+						</tr>
+					</tbody>
+				</table>
+			<div class="row"> <!-- Section divider -->
+				<div class="col-md-12">
+					<hr> <!-- Horizontal rule -->
+				</div>
+			</div>
+				<h2 class="header-section">Fonder</h2>
+				<table class="table table-hover" id="details">
+					<thead>
+						<tr class="table-data">
+							<th>Fondnamn</th>
+							<th>Fördelning (heltal, %)</th>
+							<th>Innehav (heltal, kr)</th>
+							<th>Värde (heltal, kr)</th>
+							<th>Förändring (kr)</th>
+							<th>Förändring (%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-data">
+							<th>Carnegie Corporate Bond A</th>
+								<td>~9</td>
+								<td>933</td>
+								<td>939</td>
+								<td>7</td>
+								<td class="change-good">0,74</td>
+						</tr>
+						<tr class="table-data">
+							<th>Carnegie Likviditetsfond A</th>
+								<td>~22</td>
+								<td>2219</td>
+								<td>2223</td>
+								<td>4</td>
+								<td class="change-good">0,19</td>
+						</tr>
+						<tr class="table-data">
+							<th>SKAGEN Krona</th>
+								<td>~18</td>
+								<td>1785</td>
+								<td>1781</td>
+								<td>-3</td>
+								<td class="change-bad">0,20</td>
+						</tr>
+						<tr class="table-data">
+							<th>Spiltan Räntefond Sverige</th>
+								<td>~51</td>
+								<td>5050</td>
+								<td>5130</td>
+								<td>80</td>
+								<td class="change-good">1,59</td>
+						</tr>
+						<tr class="table-sum">
+							<th>Syntes</th>
+								<td>100</td>
+								<td>9 986</td>
+								<td>10 074</td>
+								<td>88</td>
+								<td class="change-good">0,88</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- Col ends -->
+		</div> <!-- Row ends -->
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
+		<footer> <!-- Footer -->
+			<p class="header-section">Written by Jakob Papirov, Uppsala, Sweden 2017</p>
+		</footer> <!-- Footer ends -->
+		<div class="row resources"> <!-- Resources used --> <!-- MAKE SURE TO ADD THE REPOSITORY URL AND CHECK IMG URL-->
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="">Resources used</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="jakobpapirov.se/resources#main" target="_blank" title="General"><img src="graphics/Book Stack-32.png"></a><!--IMG URL-->
+         </div>
+         <div class="col-md-4">
+          <a href="jakobpapirov.se/resources#alma-mater" target="_blank" title="Specific"><img src="graphics/Tweezers-32.png"></a><!--IMG URL-->
+         </div>
+         <div col-md-4>
+            <a href="https://github.com/JakobPapirov/" target="_blank">
+              <img src="graphics/GitHub-32.png" alt="GitHub" title="The repository!"></a>
+         </div>
+       </div>
+    </div> <!-- Resources used ends -->
+	</div> <!-- container ends -->
+</body>
+</html>
