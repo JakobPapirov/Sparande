@@ -63,3 +63,9 @@ footer {
 .change-bad {
 	color: #E42217;
 }
+.change-good::before {
+	content: "+";
+}
+.change-bad::before {
+	content: "-";
+}

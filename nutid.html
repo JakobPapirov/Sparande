@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- Has to be loaded first, else overwritten -->
 			<!-- Main CSS -->
 		<link rel="stylesheet" href="css/main.css"> <!-- Find out if i should add a media tag for a separate css for mobile -->
-	<title>Sparande: Buffert</title>
+	<title>Sparande | Nutid</title>
 </head>
 <body  id="top">
 	<div class="container">
@@ -46,7 +46,18 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       		<ul class="nav navbar-nav navbar-right"> <!-- Intrapage navigation -->
       			<li><a href="#summary">Sammanställning</a></li>
-						<li><a href="#details">Detaljer</a></li>
+						<li><a href="#table-funds">Detaljer</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tidigare år<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+          			<li><a href="#table-2015">Fonder 2015</a></li>
+          			<li role="separator" class="divider"></li>
+                <li><a href="#table-2016">Fonder 2016</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#table-2017">Fonder 2017</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#table-intrest">Fasträntekonto</a></li>
+          		</ul>
+          	</li>
           	<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
 					</ul>
 					<ul class="nav navbar-nav navbar-left"> <!-- Interpage (Intersite) navigation -->
@@ -61,8 +72,8 @@
 		<div class="row"> <!-- Header -->
 			<div class="col-md-12"> <!-- Takes upp 100% row -->
 				<div class="page-title">
-					<h1>Ekonomi</h1>
-						<h3>Sparande</h3>
+					<h1>Ekonomi: Sparande</h1>
+						<h3>Nutid</h3>
 				</div>
 			</div>
 		</div> <!-- Header ends -->
@@ -86,8 +97,8 @@
 		</div>
 		<div class="row"> <!-- Row -->
 			<div class="col-md-12"> <!-- Col -->
-				<h2 class="header-section" id="summary">Nutid</h2>
-				<table class="table table-hover">
+				<h2 class="header-section" id="summary">Sammanställning (2017-01-05)</h2>
+				<table class="table table-hover"> <!-- Table: Summary -->
 					<thead>
 						<tr>
 							<th>Strategi</th>
@@ -101,7 +112,7 @@
 					<tbody>
 						<tr class="table-data">
 							<th>Räntekonto</th>
-								<td>~10</td>
+								<td>10</td>
 								<td>1200,45</td>
 								<td>1203,62</td>
 								<td>3,17</td>
@@ -109,7 +120,7 @@
 						</tr>
 						<tr class="table-data">
 							<th>Fonder</th>
-								<td>~90</td>
+								<td>90</td>
 								<td>9 986,15</td>
 								<td>10 074,02</td>
 								<td>87,87</td>
@@ -124,14 +135,14 @@
 								<td class="change-good">0,81</td>
 						</tr>
 					</tbody>
-				</table>
-			<div class="row"> <!-- Section divider -->
+				</table> <!-- Table: Summary ends -->
+				<div class="row"> <!-- Section divider -->
 				<div class="col-md-12">
 					<hr> <!-- Horizontal rule -->
 				</div>
-			</div>
-				<h2 class="header-section">Fonder</h2>
-				<table class="table table-hover" id="details">
+				</div>
+				<h3 class="header-section" id="table-funds">Fonder (2017-01-05)</h3>
+				<table class="table table-hover" id="details"> <!-- Table: Funds -->
 					<thead>
 						<tr class="table-data">
 							<th>Fondnamn</th>
@@ -145,46 +156,266 @@
 					<tbody>
 						<tr class="table-data">
 							<th>Carnegie Corporate Bond A</th>
-								<td>~9</td>
-								<td>933</td>
-								<td>939</td>
-								<td>7</td>
+								<td>9</td>
+								<td>932,34</td>
+								<td>939,26</td>
+								<td>6,92</td>
 								<td class="change-good">0,74</td>
 						</tr>
 						<tr class="table-data">
 							<th>Carnegie Likviditetsfond A</th>
-								<td>~22</td>
-								<td>2219</td>
-								<td>2223</td>
-								<td>4</td>
+								<td>22</td>
+								<td>2 218,89</td>
+								<td>2 223,12</td>
+								<td>4,23</td>
 								<td class="change-good">0,19</td>
 						</tr>
 						<tr class="table-data">
 							<th>SKAGEN Krona</th>
-								<td>~18</td>
-								<td>1785</td>
-								<td>1781</td>
-								<td>-3</td>
+								<td>18</td>
+								<td>1784,95</td>
+								<td>1781,46</td>
+								<td>-3,48</td>
 								<td class="change-bad">0,20</td>
 						</tr>
 						<tr class="table-data">
 							<th>Spiltan Räntefond Sverige</th>
-								<td>~51</td>
-								<td>5050</td>
-								<td>5130</td>
-								<td>80</td>
+								<td>51</td>
+								<td>5 049,98</td>
+								<td>5130,18</td>
+								<td>80,20</td>
 								<td class="change-good">1,59</td>
 						</tr>
 						<tr class="table-sum">
 							<th>Syntes</th>
 								<td>100</td>
-								<td>9 986</td>
-								<td>10 074</td>
-								<td>88</td>
+								<td>9 986,15</td>
+								<td>10 074,02</td>
+								<td>87,87</td>
 								<td class="change-good">0,88</td>
 						</tr>
 					</tbody>
-				</table>
+				</table> <!-- Table: Funds ends -->
+				<div class="row"> <!-- Section divider -->
+					<div class="col-md-12">
+						<hr> <!-- Horizontal rule -->
+					</div>
+				</div>
+				<h3 class="header-section" id="table-2015">Fonder: 2015</h3>
+				<div class="table-responsive"> <!-- Table: Funds 2015 -->
+					<table class="table table-hover">
+						<thead>
+							<tr class="table-data">
+							<th>Fondnamn</th>
+							<th>Fördelning (heltal, %)</th>
+							<th>Innehav (heltal, kr)</th>
+							<th>Värde (heltal, kr)</th>
+							<th>Förändring (kr)</th>
+							<th>Förändring (%)</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr class="table-data">
+								<th>Carnegie Corporate Bond A</th>
+									<td>22</td>
+									<td>729,95</td>
+									<td>724,04</td>
+									<td class="change-bad">5,91</td>
+									<td class="change-bad">0,81</td>
+							</tr>
+							<tr class="table-data">
+								<th>Carnegie Likviditetsfond A</th>
+									<td>24</td>
+									<td>819,81</td>
+									<td>816,83</td>
+									<td class="change-bad">2,98</td>
+									<td class="change-bad">0,36</td>
+							</tr>
+							<tr class="table-data">
+								<th>Spiltan räntefond Sverige</th>
+									<td>54</td>
+									<td>1 850,00</td>
+									<td>1 845,09</td>
+									<td class="change-bad">4,90</td>
+									<td class="change-bad">0,27</td>
+							</tr>
+							<tr class="table-sum">
+								<th>Syntes</th>
+									<td>100</td>
+									<td>3 399,76</td>
+									<td>3 385,97</td>
+									<td class="change-bad">13,79</td>
+									<td class="change-bad">0,41</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Table: Funds 2015 ends -->
+				<div class="row"> <!-- Section divider -->
+					<div class="col-md-12">
+						<hr> <!-- Horizontal rule -->
+					</div>
+				</div>
+				<h3 class="header-section" id="table-2016">Fonder: 2016</h3>
+				<div class="table-responsive"> <!-- Table: Funds 2016 -->
+					<table class="table table-hover">
+						<thead>
+							<tr class="table-data">
+							<th>Fondnamn</th>
+							<th>Fördelning (heltal, %)</th>
+							<th>Innehav (heltal, kr)</th>
+							<th>Värde (heltal, kr)</th>
+							<th>Förändring (kr)</th>
+							<th>Förändring (%)</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr class="table-data">
+								<th>Carnegie Corporate Bond A</th>
+									<td>9</td>
+									<td>932,34</td>
+									<td>938,97</td>
+									<td class="change-good">6,63</td>
+									<td class="change-good">0,71</td>
+							</tr>
+							<tr class="table-data">
+								<th>Carnegie Likviditetsfond A</th>
+									<td>22</td>
+									<td>2 218,89</td>
+									<td>2 222,54</td>
+									<td class="change-good">3,65</td>
+									<td class="change-good">0,16</td>
+							</tr>
+							<tr class="table-data">
+								<th>Skagen Krona</th>
+									<td>18</td>
+									<td>1 784,95</td>
+									<td>1 7816,99</td>
+									<td class="change-bad">2,04</td>
+									<td class="change-bad">0,11</td>
+							</tr>
+							<tr class="table-data">
+								<th>Spiltan räntefond Sverige</th>
+									<td>51</td>
+									<td>5 049,98</td>
+									<td>5 128,93</td>
+									<td class="change-good">78,95</td>
+									<td class="change-good">1,56</td>
+							</tr>
+							<tr class="table-sum">
+								<th>Syntes</th>
+									<td>100</td>
+									<td>9 986,15</td>
+									<td>10 077,42</td>
+									<td class="change-good">91,28</td>
+									<td class="change-good">0,91</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Table: Funds 2016 ends -->
+				<div class="row"> <!-- Section divider -->
+					<div class="col-md-12">
+						<hr> <!-- Horizontal rule -->
+					</div>
+				</div>
+				<h3 class="header-section" id="table-2017">Fonder: 2017</h3>
+				<div class="table-responsive"> <!-- Table: Funds 2017 -->
+					<table class="table table-hover">
+						<thead>
+							<tr class="table-data">
+							<th>Fondnamn</th>
+							<th>Fördelning (heltal, %)</th>
+							<th>Innehav (heltal, kr)</th>
+							<th>Värde (heltal, kr)</th>
+							<th>Förändring (kr)</th>
+							<th>Förändring (%)</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr class="table-data">
+								<th>Carnegie Corporate Bond A</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+							<tr class="table-data">
+								<th>Carnegie Likviditetsfond A</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+							<tr class="table-data">
+								<th>Skagen Krona</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+							<tr class="table-data">
+								<th>Spiltan räntefond Sverige</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+							<tr class="table-sum">
+								<th>Syntes</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Table: Funds 2017 ends -->
+				<div class="row"> <!-- Section divider -->
+					<div class="col-md-12">
+						<hr> <!-- Horizontal rule -->
+					</div>
+				</div>
+				<h3 class="header-section" id="table-intrest">Fasträntekonto 2015 - 2017</h3>
+				<div class="table-responsive"> <!-- Table: Fasträntekonto -->
+					<table class="table table-hover">
+						<thead>
+							<tr class="table-data">
+								<th>År</th>
+								<th>Sparat</th>
+								<th>Ränta (kr)</th>
+								<th>Summa</th>
+								<th>Ränta (%)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-data">
+								<th>2015</th>
+									<td>500,25</td>
+									<td>0,00</td>
+									<td>500,25</td>
+									<td>0,00</td>
+							</tr>
+							<tr class="table-data">
+								<th>2016</th>
+									<td>1 201,51</td>
+									<td>3,17</td>
+									<td>1 204,68</td>
+									<td>0,26</td>
+							</tr>
+							<tr class="table-data">
+								<th>2017</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div> <!-- Table: Fasträntekonto ends -->
 			</div> <!-- Col ends -->
 		</div> <!-- Row ends -->
 		<div class="row"> <!-- Section divider -->
